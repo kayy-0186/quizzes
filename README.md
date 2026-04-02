@@ -1,8 +1,1 @@
-.0.............................................................................0144777# quizzes
-school
-.
-                                          
-
-
-dfhdghfg
-0111111011110
+⚠️ | Niet alle bestanden kondfen erin op de github pagina.
