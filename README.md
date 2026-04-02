@@ -1,1 +1,1 @@
-⚠️ | Niet alle bestanden kondfen erin op de github pagina.
+⚠️ | Niet alle bestanden konden erin op de github pagina.
