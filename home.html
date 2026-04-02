@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body, html {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .side {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: transform 1s ease-in-out;
+            cursor: pointer;
+            z-index: 1;
+        }
+
+        .side img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 1s ease-in-out;
+        }
+
+        .side-left:hover {
+            transform: translateX(100%);
+            z-index: 2;
+        }
+
+        .side-right:hover {
+            transform: translateX(-100%);
+            z-index: 2;
+        }
+
+        .side-left a, .side-right a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="side side-left">
+        <a href="Social_Addicition/pages/index.html">
+            <img src="https://lab.nos.nl/projects/telefoonverslaving/images/iframe-web-16-9.jpg" alt="Linker Afbeelding">
+        </a>
+    </div>
+
+    <div class="side side-right">
+        <a href="Fake_News/index.html">
+            <img src="https://www.digivaardigindezorg.nl/wp-content/uploads/2021/02/isdatechtzo-header.png" alt="Rechter Afbeelding">
+        </a>
+    </div>
+</div>
+
+</body>
+</html>

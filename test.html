@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+    <script src="index.js"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mocha/mocha.css">
+</head>
+<body>
+
+<div id="mocha"></div>
+
+<!-- Mocha -->
+<script src="https://cdn.jsdelivr.net/npm/mocha/mocha.js"></script>
+
+<!-- ✅ JUISTE Chai (UMD versie) -->
+<script src="https://cdn.jsdelivr.net/npm/chai@4.3.7/chai.min.js"></script>
+
+<script>
+    mocha.setup('bdd');
+
+    console.log("chai loaded?", typeof chai); // moet "object" zijn
+
+    const expect = chai.expect;
+</script>
+<script src="index.js"></script>
+<script>
+    function sum(a, b) {
+        return a + b;
+    }
+
+    describe('Sum function', function () {
+        it('should return 3', function () {
+            expect(sum(1, 2)).to.equal(3);
+        });
+    });
+
+    describe('Sum function should be wrong', function () {
+        it('should not return 5', function () {
+            expect(sum(1, 2)).not.to.equal(5);
+        });
+    });
+
+    describe('Sum function should be wrong 222', function () {
+        it('should not return 5', function () {
+            expect(vragen[0].vraag).to.equal("Wat is fake nieuws?");
+        });
+    });
+
+    describe('Sum function should be wrong123', function () {
+        it('should not return 5', function () {
+            expect(vragen[0].antwoorden).to.equal("Misleidende informatie");
+        });
+    });
+
+    
+</script>
+
+<script>
+    mocha.run();
+</script>
+
+</body>
+</html>

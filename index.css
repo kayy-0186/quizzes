@@ -1,0 +1,112 @@
+#body {
+  font-family: Arial, sans-serif;
+  background-color: #35428742;
+  color: #ff0000;
+  border: #000000 2px;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#achtergrondVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.443);
+  z-index: -1;
+  object-fit: cover;
+}
+
+#button {
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+h2 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 10px;
+  
+}
+
+#score {
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  color: #00ff15;
+}
+
+#vraag {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+#antwoorden {
+  margin-bottom: 20px;
+}
+
+#antwoorden label {
+  display: inline-block;
+  margin: 5px;
+  padding: 12px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background-color: #0d1ed9;
+  color: white;
+  transition: background-color 0.3s, border 0.2s;
+  min-width: 150px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+#antwoorden label:hover {
+  background-color: #3498db;
+  /*laat de text in het midden van de button staan*/
+  line-height: 1.5;
+}
+
+#antwoorden input[type="checkbox"] {
+  display: none;
+}
+
+#antwoorden input[type="checkbox"]:checked + span {
+  border: 2px solid #e67e22;
+  background-color: #f39c12;
+}
+
+#antwoorden button {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#antwoorden button:hover {
+  background-color: #3498db;
+}
+
+#resultaat {
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: bold;
+  color: #e74c3c;
+  margin-top: 20px;
+}
+

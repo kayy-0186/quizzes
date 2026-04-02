@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Score</title>
+<link rel="stylesheet" href="/Social_Addicition/css/style.css">
+</head>
+<body>
+
+    <div class="background-video">
+        <video class="video" autoplay muted loop playsinline>
+          <source src="/Social_Addicition/videos/131999-751915336.mp4" type="video/mp4">
+        </video>
+      </div>
+
+<div class="page">
+    <div id="loading">
+        <h1>Score
+             laden...</h1>
+    </div>
+    
+    <div id="result" style="display:none;">
+        <h1>Jouw Score</h1>
+        <h2 id="score"></h2>
+    
+        <div id="review"></div>
+    </div>
+<a href="quiz.html"><button>Opnieuw</button></a>
+<a href="index.html"><button>Home</button></a>
+</div>
+
+<script>
+let s=localStorage.getItem("score")||0;
+document.getElementById("score").innerText=s+" / 10 goed!";
+</script>
+
+<script src="/Social_Addicition/js/score.js">
+
+</script>
+
+</body>
+</html>
